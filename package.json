@@ -1,0 +1,10 @@
+{
+  "name": "real-ci-build",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo Build successful > build.txt"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}
