@@ -26,6 +26,12 @@ pipeline {
                 sh 'ls -l build.txt'
             }
         }
+     // NEW: Archive artifact stage
+        stage('Archive Artifact') {
+            steps {
+                archiveArtifacts artifacts: 'build.txt', fingerprint: true
+            }
+        }
     }
 
     post {
