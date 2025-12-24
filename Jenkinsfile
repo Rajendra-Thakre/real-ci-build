@@ -9,21 +9,13 @@ pipeline {
             }
         }
 
-        stage('Install Dependencies') {
+        stage('Deploy') {
             steps {
-                sh 'npm install'
-            }
-        }
-
-        stage('Build') {
-            steps {
-                sh 'npm run build'
-            }
-        }
-
-        stage('Verify Artifact') {
-            steps {
-                sh 'ls -l build.txt'
+                sh '''
+                rm -rf /opt/app/*
+                cp -r * /opt/app/
+                echo "Deployed at $(date)" > /opt/app/deploy.txt
+                '''
             }
         }
      // NEW: Archive artifact stage
@@ -36,7 +28,7 @@ pipeline {
 
     post {
         success {
-            echo 'Build executed successfully in Jenkins'
+            echo 'CI/CD pipeline executed successfully'
         }
     }
 }
