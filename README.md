@@ -74,3 +74,17 @@ pipeline {
         }
     }
 }
+
+
+
+
+🔗 References (Jenkinsfile & CI/CD)
+Jenkins Official Documentation – https://www.jenkins.io/
+Jenkins Declarative Pipeline Syntax – https://www.jenkins.io/doc/book/pipeline/syntax/
+Jenkins Archive Artifacts – https://www.jenkins.io/doc/pipeline/steps/workflow-basic-steps/#archiveartifacts-archive-the-artifacts
+GitHub Documentation – https://docs.github.com/
+Linux Official Kernel Docs – https://www.kernel.org/
+GNU Bash / Shell Scripting – https://www.gnu.org/software/bash/
+Microsoft Azure Docs – https://learn.microsoft.com/en-us/azure/
+Cisco CCNA Certification – https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html
+CI/CD Concepts – https://martinfowler.com/articles/continuousIntegration.html
